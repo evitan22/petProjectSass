@@ -1,5 +1,15 @@
-h1
-    color: red
+//Заметка  
+@import "resets.scss"
+@import "normalizez.scss"
 
-p
-    color: blue
+$mail-color: #F28B64
+
+@mixin box
+    width: 400px
+    height: 400px
+    background-color: grey
+    
+.block
+    @include box
+    &__text
+        color: $mail-color
