@@ -1,65 +1,4 @@
 @charset "UTF-8";
-/* line 1, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* line 21, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-/* line 25, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
-html {
-  height: 100%;
-}
-
-/* line 28, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
-body {
-  line-height: 1;
-}
-
-/* line 31, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 34, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
-blockquote, q {
-  quotes: none;
-}
-
-/* line 37, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-/* line 42, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 /* line 1, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/normalizez.scss */
 html {
   line-height: 1.15;
@@ -426,16 +365,109 @@ template {
   display: none;
 }
 
-/* line 12, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
-.block {
-  width: 400px;
-  height: 400px;
-  background-color: grey;
+/* line 1, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 21, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 25, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
+html {
+  height: 100%;
+}
+
+/* line 28, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
+body {
+  line-height: 1;
+}
+
+/* line 31, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 34, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 37, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 42, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/resets.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 6, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* line 10, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.main-section {
+  height: 800px;
+  background: #F0F0F0;
+  padding-top: 16px;
 }
 
 /* line 14, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
-.block__text {
-  color: #F28B64;
+.main-section__nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 69px;
+  align-items: center;
+}
+
+/* line 21, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.main-section__image {
+  width: 134px;
+  height: 69px;
+}
+
+/* line 26, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.nav-menu__list {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 29, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.nav-menu__list-item {
+  margin-right: 64px;
+}
+
+/* line 31, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.nav-menu__list-item:last-child {
+  margin-right: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
