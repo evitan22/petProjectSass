@@ -426,20 +426,25 @@ table {
   border-spacing: 0;
 }
 
-/* line 6, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+/* line 4, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 10, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
 .container {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-/* line 10, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+/* line 14, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
 .main-section {
   height: 800px;
   background: #F0F0F0;
   padding-top: 16px;
 }
 
-/* line 14, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+/* line 18, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
 .main-section__nav-container {
   display: flex;
   flex-direction: row;
@@ -448,26 +453,113 @@ table {
   align-items: center;
 }
 
-/* line 21, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
-.main-section__image {
+/* line 24, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.main-section__logo {
   width: 134px;
-  height: 69px;
 }
 
 /* line 26, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.main-section__content-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 31, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
 .nav-menu__list {
   display: flex;
   flex-direction: row;
 }
 
-/* line 29, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+/* line 34, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
 .nav-menu__list-item {
   margin-right: 64px;
+  font-size: 18px;
 }
 
-/* line 31, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+/* line 37, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
 .nav-menu__list-item:last-child {
   margin-right: 0px;
+}
+
+/* line 40, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.left-wrapper {
+  position: relative;
+}
+
+/* line 42, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.left-wrapper img {
+  position: relative;
+  z-index: 5;
+}
+
+/* line 45, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.left-wrapper__rectangle-blue {
+  position: absolute;
+  top: 150px;
+  left: -50px;
+  width: 566px;
+  height: 220px;
+  background: #5290EA;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(-64deg);
+  z-index: 2;
+}
+
+/* line 56, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.left-wrapper__rectangle-orange {
+  position: absolute;
+  top: 160px;
+  left: -30px;
+  width: 618px;
+  height: 220px;
+  background: #F28B64;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(-50.81deg);
+  z-index: 3;
+}
+
+/* line 67, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.left-wrapper__rectangle-grey {
+  position: absolute;
+  top: 190px;
+  left: 10px;
+  width: 609px;
+  height: 220px;
+  background: #E2E2E2;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(-36.15deg);
+  z-index: 1;
+}
+
+/* line 79, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.icons {
+  display: inline-flex;
+}
+
+/* line 81, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.icons__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #5290EA;
+  border-radius: 100px;
+  margin-right: 17px;
+}
+
+/* line 90, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.icons__item:last-child {
+  margin-right: 0px;
+}
+
+/* line 92, C:/Users/root/Desktop/Проэкты_2курс/petProjectSass/sass/style.sass */
+.icons__item i, .icons__item svg {
+  font-size: 21px;
+  color: green;
 }
 
 /*# sourceMappingURL=style.css.map */
